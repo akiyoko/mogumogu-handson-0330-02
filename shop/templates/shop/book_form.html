@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>サンプル</title>
+    <style>
+    form label {
+      width: 20%;
+      float: left;
+    }
+    </style>
+</head>
+<body>
+<form method="post" action="/shop/create/">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <button type="submit">登録</button>
+</form>
+</body>
+</html>
